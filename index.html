@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Availability Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>👥 Team Availability Tracker</h1>
+
+    <!-- Statistics -->
+    <div class="stats">
+
+        <div class="card">
+            <h2 id="totalCount">0</h2>
+            <p>Total Members</p>
+        </div>
+
+        <div class="card available-card">
+            <h2 id="availableCount">0</h2>
+            <p>Available</p>
+        </div>
+
+        <div class="card busy-card">
+            <h2 id="busyCount">0</h2>
+            <p>Busy</p>
+        </div>
+
+    </div>
+
+    <!-- Search Box -->
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search team member..."
+    >
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+
+        <button onclick="filterMembers('all')">All</button>
+
+        <button onclick="filterMembers('available')">
+            Available
+        </button>
+
+        <button onclick="filterMembers('busy')">
+            Busy
+        </button>
+
+    </div>
+
+    <!-- Success Message -->
+    <div id="message"></div>
+
+    <!-- Team List -->
+    <div id="teamList"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
